@@ -1,0 +1,17 @@
+.card-home {
+  margin: auto;
+  width: 50%;
+}
+
+.center-text {
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.thin-text {
+  font-weight: lighter;
+}
