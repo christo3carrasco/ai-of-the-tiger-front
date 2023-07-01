@@ -1,0 +1,115 @@
+<mat-card class="card-home center-text">
+  <mat-card-header>
+    <span>Sign Up</span>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <form action="/signin">
+      <mat-form-field appearance="outline">
+        <mat-label>IC</mat-label>
+        <input
+          matInput
+          type="number"
+          name="ic"
+          placeholder="Your IC"
+          min="10000000"
+          max="99999999"
+          required
+        />
+        <mat-icon matSuffix>badge</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Firstname</mat-label>
+        <input
+          matInput
+          type="text"
+          name="firstname"
+          placeholder="Your firstname"
+          pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]*"
+          minlength="3"
+          maxlength="99"
+          required
+        />
+        <mat-icon matSuffix>account_circle</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Lastname</mat-label>
+        <input
+          matInput
+          type="text"
+          name="lastname"
+          placeholder="Your lastname"
+          pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]*"
+          minlength="3"
+          maxlength="99"
+          required
+        />
+        <mat-icon matSuffix>account_circle</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Phone</mat-label>
+        <input
+          matInput
+          type="number"
+          name="phone"
+          placeholder="Your phone"
+          min="900000000"
+          max="999999999"
+          required
+        />
+        <mat-icon matSuffix>call</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Birth</mat-label>
+        <input
+          matInput
+          type="date"
+          name="birth"
+          placeholder="Your birth"
+          min="1924-01-01"
+          max="2005-12-31"
+          required
+        />
+        <mat-icon matSuffix>calendar_month</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Gender</mat-label>
+        <mat-select name="gender" required>
+          <mat-option select value="Female">Female</mat-option>
+          <mat-option value="Male">Male</mat-option>
+        </mat-select>
+        <mat-icon matSuffix>sentiment_satisfied</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          type="email"
+          name="email"
+          placeholder="example@tiger.com"
+          pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+          required
+        />
+        <mat-icon matSuffix>alternate_email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          type="password"
+          name="password"
+          placeholder="******"
+          required
+        />
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+      <br />
+      <button mat-raised-button color="accent">Sign up</button>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <p class="thin-text">
+      Have an account? <a routerLink="/signin">Sign in</a>
+    </p>
+  </mat-card-footer>
+</mat-card>

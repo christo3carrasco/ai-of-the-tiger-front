@@ -1,0 +1,39 @@
+<mat-card class="card-home center-text">
+  <mat-card-header>
+    <span>Sign In</span>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <form action="/profile">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          type="email"
+          name="email"
+          placeholder="example@tiger.com"
+          required
+        />
+        <mat-icon matSuffix>alternate_email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          type="password"
+          name="password"
+          placeholder="******"
+          required
+        />
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+      <br />
+      <button mat-raised-button color="accent">Sign in</button>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <p class="thin-text">
+      Don't have an account? <a routerLink="/signup">Sign up</a>
+    </p>
+  </mat-card-footer>
+</mat-card>
