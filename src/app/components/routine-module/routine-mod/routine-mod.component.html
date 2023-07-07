@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>Generated routine ({{ data.muscle }})</h2>
+<div mat-dialog-content>
+  <p>Intensity: {{ data.intensity }}</p>
+  <div *ngIf="showSpinner">
+    <mat-spinner color="accent" class="center-btn"></mat-spinner>
+  </div>
+  <div *ngIf="!showSpinner">
+    <div *ngIf="data.muscle == 'push'">
+      <ol>
+        <li>Barbell Bench Press</li>
+        <li>Shoulder Press</li>
+        <li>Tricep Dips</li>
+        <li>Incline Dumbbell Press</li>
+      </ol>
+    </div>
+    <div *ngIf="data.muscle == 'pull'">
+      <ol>
+        <li>Pull-Ups</li>
+        <li>Pull-Ups</li>
+        <li>Seated Cable Rows</li>
+        <li>Bicep Curls</li>
+      </ol>
+    </div>
+    <div *ngIf="data.muscle == 'legs'">
+      <ol>
+        <li>Squats</li>
+        <li>Deadlifts</li>
+        <li>Walking Lunges</li>
+        <li>Calf Raises</li>
+      </ol>
+    </div>
+    <span *ngIf="data.intensity == 'low'">Sets (3) x Reps (10)</span>
+    <span *ngIf="data.intensity == 'medium'">Sets (4) x Reps (12)</span>
+    <span *ngIf="data.intensity == 'high'">Sets (5) x Reps (15)</span>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button
+    mat-raised-button
+    class="center-btn"
+    color="accent"
+    [mat-dialog-close]="true"
+  >
+    Close
+  </button>
+</div>

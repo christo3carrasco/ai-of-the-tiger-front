@@ -1,0 +1,41 @@
+<div class="center-text">
+  <button mat-raised-button color="accent" routerLink="/routine">
+    Routine
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/motivation">
+    Motivation
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/diet">Diet</button>
+</div>
+<br />
+<mat-card class="card-home center-text">
+  <mat-card-header>
+    <span>Routine</span>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Muscle group</mat-label>
+      <mat-select [(value)]="muscle" required>
+        <mat-option select value="push">Push</mat-option>
+        <mat-option value="pull">Pull</mat-option>
+        <mat-option value="legs">Legs</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Intensity</mat-label>
+      <mat-select [(value)]="intensity" required>
+        <mat-option select value="low">Low</mat-option>
+        <mat-option value="medium">Medium</mat-option>
+        <mat-option value="high">High</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="openDialog()">
+      Generate
+    </button>
+  </mat-card-actions>
+</mat-card>
