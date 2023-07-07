@@ -13,9 +13,11 @@ import { UserSignupComponent } from './components/user-module/user-signup/user-s
 import { UserProfileComponent } from './components/user-module/user-profile/user-profile.component';
 import { RoutineMainComponent } from './components/routine-module/routine-main/routine-main.component';
 import { RoutineModComponent } from './components/routine-module/routine-mod/routine-mod.component';
+import { DietModComponent } from './components/diet-module/diet-mod/diet-mod.component';
+import { DietMainComponent } from './components/diet-module/diet-main/diet-main.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, UserSigninComponent, UserSignupComponent, UserProfileComponent, RoutineMainComponent, RoutineModComponent],
+  declarations: [AppComponent, HomeComponent, UserSigninComponent, UserSignupComponent, UserProfileComponent, RoutineMainComponent, RoutineModComponent, DietModComponent, DietMainComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

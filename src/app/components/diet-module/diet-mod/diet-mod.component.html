@@ -1,0 +1,173 @@
+<h2 mat-dialog-title>Generated diet ({{ data.type }})</h2>
+<div mat-dialog-content>
+  <div *ngIf="showSpinner">
+    <mat-spinner color="accent" class="center-btn"></mat-spinner>
+  </div>
+  <div *ngIf="!showSpinner">
+    <div *ngIf="data.type == 'mediterranean'">
+      <ol *ngIf="data.meals == '2'">
+        <li>Breakfast</li>
+        <span>
+          Scrambled eggs with spinach, tomatoes, and feta cheese. Serve with a
+          side of whole-grain toast.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Grilled chicken breast with a quinoa salad, including cucumber, cherry
+          tomatoes, olives, red onion, and a lemon-herb dressing.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '3'">
+        <li>Breakfast</li>
+        <span>
+          Oatmeal topped with sliced banana, chopped walnuts, and a drizzle of
+          honey.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Greek salad with mixed greens, tomatoes, cucumbers, red onion, olives,
+          and feta cheese. Dress with olive oil and lemon juice.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Grilled salmon served with roasted vegetables (such as eggplant,
+          zucchini, and bell peppers) and a side of whole-grain couscous.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '4'">
+        <li>Breakfast</li>
+        <span>
+          Vegetable omelet made with bell peppers, onions, tomatoes, and feta
+          cheese.
+        </span>
+        <li>Morning Snack</li>
+        <span>
+          Greek yogurt with a handful of mixed nuts and dried fruits.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Grilled shrimp and vegetable skewers served with a side of tabbouleh
+          salad.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Baked chicken breast with lemon and herbs, accompanied by roasted
+          sweet potatoes and sautéed spinach.
+        </span>
+      </ol>
+    </div>
+    <div *ngIf="data.type == 'vegetarian'">
+      <ol *ngIf="data.meals == '2'">
+        <li>Breakfast</li>
+        <span>
+          Greek yogurt topped with sliced almonds, honey, and fresh berries.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Whole-grain pita bread filled with falafel, hummus, diced tomatoes,
+          cucumbers, and a sprinkle of feta cheese.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '3'">
+        <li>Breakfast</li>
+        <span>
+          Avocado toast on whole-grain bread, topped with cherry tomatoes, feta
+          cheese, and a sprinkle of basil.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Mediterranean-style pasta salad with whole-wheat pasta, cherry
+          tomatoes, cucumber, olives, red onion, feta cheese, and a lemon-herb
+          dressing.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Grilled vegetable skewers (such as bell peppers, zucchini, and
+          eggplant) served with quinoa and a side of tzatziki sauce.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '4'">
+        <li>Breakfast</li>
+        <span>
+          Smoothie bowl made with blended frozen berries, banana, spinach,
+          almond milk, and topped with granola and sliced almonds.
+        </span>
+        <li>Morning Snack</li>
+        <span>
+          Greek yogurt with a drizzle of honey and a handful of mixed nuts.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Chickpea and vegetable stir-fry with bell peppers, broccoli, carrots,
+          snap peas, and a light soy-ginger sauce. Serve over brown rice.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Stuffed eggplant with a filling of quinoa, tomatoes, onions, garlic,
+          herbs, and topped with melted mozzarella cheese.
+        </span>
+      </ol>
+    </div>
+    <div *ngIf="data.type == 'paleo'">
+      <ol *ngIf="data.meals == '2'">
+        <li>Breakfast</li>
+        <span>
+          Vegetable omelet cooked with olive oil and filled with spinach, bell
+          peppers, onions, and mushrooms.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Grilled chicken breast with a side of roasted sweet potatoes and
+          steamed broccoli.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '3'">
+        <li>Breakfast</li>
+        <span>
+          Scrambled eggs cooked with coconut oil, served with a side of mixed
+          berries.
+        </span>
+        <li>Lunch</li>
+        <span>
+          Grilled shrimp salad with mixed greens, cucumbers, cherry tomatoes,
+          and sliced almonds, dressed with olive oil and lemon juice.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Baked salmon fillet seasoned with herbs, accompanied by roasted
+          Brussels sprouts and cauliflower rice.
+        </span>
+      </ol>
+      <ol *ngIf="data.meals == '4'">
+        <li>Breakfast</li>
+        <span>
+          Paleo pancakes made with almond flour, eggs, and mashed bananas,
+          served with a side of mixed berries.
+        </span>
+        <li>Morning Snack</li>
+        <span> Apple slices with almond butter. </span>
+        <li>Lunch</li>
+        <span>
+          Turkey lettuce wraps filled with sliced turkey breast, avocado,
+          cucumber, and mustard.
+        </span>
+        <li>Dinner</li>
+        <span>
+          Baked chicken thighs with roasted vegetables (such as carrots, bell
+          peppers, and onions) and a side of cauliflower rice.
+        </span>
+      </ol>
+    </div>
+  </div>
+  <p>Calories: {{ data.calories }}</p>
+</div>
+<div mat-dialog-actions>
+  <button
+    mat-raised-button
+    class="center-btn"
+    color="accent"
+    [mat-dialog-close]="true"
+  >
+    Close
+  </button>
+</div>

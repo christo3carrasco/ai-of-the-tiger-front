@@ -1,0 +1,49 @@
+<div class="center-text">
+  <button mat-raised-button color="accent" routerLink="/routine">
+    Routine
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/motivation">
+    Motivation
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/diet">Diet</button>
+</div>
+<br />
+<mat-card class="card-home center-text">
+  <mat-card-header>
+    <span>Diet</span>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Type</mat-label>
+      <mat-select [(value)]="type" required>
+        <mat-option value="mediterranean">Mediterranean</mat-option>
+        <mat-option value="vegetarian">Vegetarian</mat-option>
+        <mat-option value="paleo">Paleo</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Meals</mat-label>
+      <mat-select [(value)]="meals" required>
+        <mat-option value="2">2</mat-option>
+        <mat-option value="3">3</mat-option>
+        <mat-option value="4">4</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Calories</mat-label>
+      <mat-select [(value)]="calories" required>
+        <mat-option value="1000 cal">1000</mat-option>
+        <mat-option value="2000 cal">2000</mat-option>
+        <mat-option value="3000 cal">3000</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="openDialog()">
+      Generate
+    </button>
+  </mat-card-actions>
+</mat-card>
