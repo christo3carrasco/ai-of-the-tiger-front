@@ -1,0 +1,27 @@
+.card-home {
+  margin: auto;
+  width: 50%;
+}
+
+.center-text {
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.thin-text {
+  font-weight: lighter;
+}
+
+mat-card-content {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-home {
+    width: 85%;
+  }
+}

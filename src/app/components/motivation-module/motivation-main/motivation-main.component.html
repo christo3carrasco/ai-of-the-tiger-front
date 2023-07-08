@@ -1,0 +1,94 @@
+<div class="center-text">
+  <button mat-raised-button color="accent" routerLink="/routine">
+    Routine
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/motivation">
+    Motivation
+  </button>
+  <span>&nbsp;</span>
+  <button mat-raised-button color="accent" routerLink="/diet">Diet</button>
+</div>
+<br />
+<mat-card class="card-home center-text">
+  <mat-card-header>
+    <span>Motivation</span>
+  </mat-card-header>
+  <br />
+  <mat-card-content>
+    <mat-tab-group>
+      <mat-tab label="Music">
+        <iframe
+          name="contenedorPlayer"
+          class="cuadroBordeado"
+          allow="autoplay"
+          width="100%"
+          height="110px"
+          marginwidth="0"
+          marginheight="0"
+          hspace="0"
+          vspace="0"
+          frameborder="0"
+          scrolling="no"
+          src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=http://stream.zeno.fm/b8cm6m7vp68uv&fondo=05&formato=mp3&color=15&titulo=2&autoStart=20&vol=5&tipo=12&nombre=Tiger+GPT+Radio&botonPlay=4&server=http://stream.zeno.fm/status.xslCHUMILLASmount=/b8cm6m7vp68uv"
+        ></iframe>
+      </mat-tab>
+      <mat-tab label="Phrases">
+        <p class="thin-text">"{{ currentPhrase.text }}"</p>
+        <span>~ {{ currentPhrase.author }}</span>
+        <br />
+        <br />
+        <button mat-raised-button color="warn" (click)="randomPhrase()">
+          Random
+        </button>
+      </mat-tab>
+      <mat-tab label="Videos">
+        <iframe
+          *ngIf="currentVideo.url == 1"
+          width="100%"
+          src="https://www.youtube.com/embed/Mvt0_AVqitQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          *ngIf="currentVideo.url == 2"
+          width="100%"
+          src="https://www.youtube.com/embed/CiIkBT-HFOA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          *ngIf="currentVideo.url == 3"
+          width="100%"
+          src="https://www.youtube.com/embed/fsaKwDPBTeM"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          *ngIf="currentVideo.url == 4"
+          width="100%"
+          src="https://www.youtube.com/embed/3_9DulcG_BM"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          *ngIf="currentVideo.url == 5"
+          width="100%"
+          src="https://www.youtube.com/embed/A6feRM3yjVE"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <br />
+        <button mat-raised-button color="warn" (click)="randomVideo()">
+          Random
+        </button>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

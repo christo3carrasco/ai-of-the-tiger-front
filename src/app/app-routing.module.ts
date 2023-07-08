@@ -7,6 +7,7 @@ import { UserSignupComponent } from './components/user-module/user-signup/user-s
 import { UserProfileComponent } from './components/user-module/user-profile/user-profile.component';
 import { RoutineMainComponent } from './components/routine-module/routine-main/routine-main.component';
 import { DietMainComponent } from './components/diet-module/diet-main/diet-main.component';
+import { MotivationMainComponent } from './components/motivation-module/motivation-main/motivation-main.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'profile', component: UserProfileComponent },
   { path: 'routine', component: RoutineMainComponent },
   { path: 'diet', component: DietMainComponent },
+  { path: 'motivation', component: MotivationMainComponent },
 ];
 
 @NgModule({
