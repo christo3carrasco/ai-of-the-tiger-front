@@ -7,12 +7,12 @@ export interface User {
 
 const PROFILE_DATA: User[] = [
   { user: 'IC', data: '70336923' },
-  { user: 'Firstname', data: 'Angie Alexandra' },
-  { user: 'Lastname', data: 'Cabanillas Beltran' },
-  { user: 'Phone', data: '949988810' },
-  { user: 'Birth', data: '05/07/2000' },
-  { user: 'Gender', data: 'Female' },
-  { user: 'Email', data: 'angieacb@gmail.com' },
+  { user: 'Firstname', data: 'Robert Alexander' },
+  { user: 'Lastname', data: 'Balboa Cabrera' },
+  { user: 'Phone', data: '949988817' },
+  { user: 'Birth', data: '05/07/1986' },
+  { user: 'Gender', data: 'Male' },
+  { user: 'Email', data: 'rocky@tiger.com' },
   { user: 'Expiration', data: '14 days left' },
 ];
 
