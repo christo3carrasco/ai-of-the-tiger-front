@@ -16,9 +16,10 @@ import { RoutineModComponent } from './components/routine-module/routine-mod/rou
 import { DietModComponent } from './components/diet-module/diet-mod/diet-mod.component';
 import { DietMainComponent } from './components/diet-module/diet-main/diet-main.component';
 import { MotivationMainComponent } from './components/motivation-module/motivation-main/motivation-main.component';
+import { MotivationRewardsComponent } from './components/motivation-module/motivation-rewards/motivation-rewards.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, UserSigninComponent, UserSignupComponent, UserProfileComponent, RoutineMainComponent, RoutineModComponent, DietModComponent, DietMainComponent, MotivationMainComponent],
+  declarations: [AppComponent, HomeComponent, UserSigninComponent, UserSignupComponent, UserProfileComponent, RoutineMainComponent, RoutineModComponent, DietModComponent, DietMainComponent, MotivationMainComponent, MotivationRewardsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
