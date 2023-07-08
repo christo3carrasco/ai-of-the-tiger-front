@@ -15,3 +15,9 @@ span {
 .thin-text {
   font-weight: lighter;
 }
+
+@media only screen and (max-width: 600px) {
+  .card-home {
+    width: 85%;
+  }
+}

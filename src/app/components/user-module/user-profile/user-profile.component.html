@@ -1,4 +1,8 @@
 <div class="center-text">
+  <button mat-raised-button color="primary" routerLink="/profile">
+    Profile
+  </button>
+  <br /><br />
   <button mat-raised-button color="accent" routerLink="/routine">
     Routine
   </button>
@@ -29,7 +33,12 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </mat-card-content>
+  <br />
   <mat-card-footer>
+    <span>
+      Extend your license for $1.99 per month, you can pay with your favorite
+      digital wallet.
+    </span>
     <img
       src="https://res.cloudinary.com/christo3carrasco/image/upload/v1688194299/tiger_qr_lq7uvb.png"
       alt="QR AI of the Tiger"
